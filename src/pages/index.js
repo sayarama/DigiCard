@@ -43,6 +43,8 @@ export default function Home() {
         </div>
       </div>
       {/* Akhir Bagian Pokemon Card */}
+
+      <footer className="text-center bg-gray-800 text-white font-poppins">Digimon Website by @ul.ramadhan</footer>
     </>
   );
 }
@@ -85,5 +87,6 @@ function Card({ id, name, xAntibody }) {
         </Link>
       </button>
     </div>
+    
   );
 }
