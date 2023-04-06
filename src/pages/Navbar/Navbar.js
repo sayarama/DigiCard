@@ -29,7 +29,7 @@ function Navbar() {
 
                     <div className="flex-shrink-0">
                       <img
-                        className="h-14 w-24"
+                        className="h-14 w-28"
                         src="https://raw.githubusercontent.com/ulrmdhn/DigiCard/main/src/pages/img/logo.webp"
                         alt="Logo Digimon"
                       />

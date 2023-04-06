@@ -1,0 +1,7 @@
+{
+    "vscord.app.name": "Visual Studio Code",
+    "vscord.status.idle.enabled": false,
+    "vscord.status.state.enabled": false,
+    "vscord.status.state.idle.enabled": false,
+    "vscord.status.state.text.viewing": "Viewing {file_name}"
+}
