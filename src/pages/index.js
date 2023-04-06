@@ -23,7 +23,9 @@ export default function Home() {
 
     {/* Awal Bagian Hero */}
     <div className='w-screen h-screen bg-yellow-300'>
-
+      <div className='navbar w-screen h-24 shadow-lg bg-white'>
+        <img alt='digimon-logo'/>
+      </div>
     </div>
 
 
