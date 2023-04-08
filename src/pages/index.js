@@ -25,10 +25,21 @@ export default function Home() {
       <div className="w-screen h-screen bg-img-sm md:bg-img-md bg-no-repeat bg-cover bg-center">
         <Navbar/>
 
-        <div className="img md:hidden py-4 flex flex-col items-center ">
+        <div className="img-base py-4 flex flex-col items-center md:hidden">
           <img className="w-40" src="https://raw.githubusercontent.com/ulrmdhn/DigiCard/main/src/pages/img/logo.webp" />
 
           <img src="https://raw.githubusercontent.com/ulrmdhn/DigiCard/main/src/pages/img/digi.webp" alt="digi-logo" />
+        </div>
+
+        <div className="hidden md:block img-md">
+         <div className="left">
+          <h1>DIGIMON</h1>
+          <p>Digimon, short for "Digital Monsters", is a Japanese media franchise encompassing virtual pet toys, anime, manga, video games, films and a trading card game. The franchise focuses on the eponymous creatures, who inhabit a "Digital World", a parallel universe that originated from Earth's various communication networks.</p>
+         </div>
+
+         <div className="right">
+         <img className="w-32" src="https://raw.githubusercontent.com/ulrmdhn/DigiCard/main/src/pages/img/digi-all.webp" />
+         </div>
         </div>
       </div>
 
