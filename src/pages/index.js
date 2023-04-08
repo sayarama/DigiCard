@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Link from "next/link";
+import { FaSearch } from "react-icons/fa";
 import Navbar from "./Navbar/Navbar";
 
 export default function Home() {
@@ -31,14 +32,16 @@ export default function Home() {
           <img src="https://raw.githubusercontent.com/ulrmdhn/DigiCard/main/src/pages/img/digi.webp" alt="digi-logo" />
         </div>
 
-        <div className="hidden md:block img-md">
-         <div className="left">
-          <h1>DIGIMON</h1>
+        <div className="hidden md:block bg-img-md bg-center bg-no-repeat font-poppins">
+         <div className="img-item flex">
+         <div className="left p-12 w-2/4 h-screen flex items-left justify-center gap-8 flex-col">
+          <p className="md:text-5xl lg:text-9xl font-extrabold">DIGIMON</p>
           <p>Digimon, short for "Digital Monsters", is a Japanese media franchise encompassing virtual pet toys, anime, manga, video games, films and a trading card game. The franchise focuses on the eponymous creatures, who inhabit a "Digital World", a parallel universe that originated from Earth's various communication networks.</p>
          </div>
 
-         <div className="right">
-         <img className="w-32" src="https://raw.githubusercontent.com/ulrmdhn/DigiCard/main/src/pages/img/digi-all.webp" />
+         <div className="right w-2/4 h-screen relative">
+          <img className="absolute bottom-24" src="https://raw.githubusercontent.com/ulrmdhn/DigiCard/main/src/pages/img/digi-all.webp"/>
+         </div>
          </div>
         </div>
       </div>
@@ -47,8 +50,19 @@ export default function Home() {
 
       {/* Ini Awal Bagian Pokemon Card */}
 
-      <div className="Home w-screen h-screen bg-yellow-300 flex">
-        <div className=" bg-white shadow-2xl rounded-xl scrollbar-hide overflow-scroll font-poppins font-semibold flex flex-wrap justify-center items-center m-auto w-3/4 h-3/4   ">
+      <div className="Home w-screen h-screen bg-yellow-300 p-5">
+
+        <div className="mt-12 w-3/4 m-auto mb-8 font-poppins md:flex-row flex-col flex justify-between items-center">
+          <h1 className="text-xl font-bold">Digimon List Section</h1>
+          <div className="search flex items-center bg-white p-3 rounded-lg">
+            <FaSearch/>
+            <input type="search" className="bg-transparent ml-2 z-10 focus:outline-none" placeholder="Search" />
+          </div>
+        </div>
+
+
+        
+        <div className=" bg-white shadow-2xl rounded-xl scrollbar-hide overflow-scroll  font-poppins font-semibold flex flex-wrap justify-center items-center m-auto w-3/4 h-3/4   ">
           {items.map((item) => (
             <Card
               key={item.id}
