@@ -22,8 +22,14 @@ export default function Home() {
   return (
     <>
       {/* Awal Bagian Hero */}
-      <div className="w-screen h-screen bg-yellow-300">
+      <div className="w-screen h-screen bg-img-sm md:bg-img-md bg-no-repeat bg-cover bg-center">
         <Navbar/>
+
+        <div className="img">
+          <img className="w-40" src="https://raw.githubusercontent.com/ulrmdhn/DigiCard/main/src/pages/img/logo.webp" />
+
+          <img className="w-full" src="https://raw.githubusercontent.com/ulrmdhn/DigiCard/main/src/pages/img/digi.png" alt="digi-logo" />
+        </div>
       </div>
 
       {/* Akhir Bagian Hero */}

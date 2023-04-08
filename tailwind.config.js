@@ -10,6 +10,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'img-sm': "url('https://raw.githubusercontent.com/ulrmdhn/DigiCard/main/src/pages/img/bg-color.png')",
+        
+        'img-md': "url('https://raw.githubusercontent.com/ulrmdhn/DigiCard/main/src/pages/img/bg-lg.png')"
+      },
       boxShadow:{
         'lex': 'box-shadow: 3px 6px 29px -12px rgba(0,0,0,0.75);'
       },
