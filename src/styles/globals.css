@@ -79,6 +79,12 @@
   }
 }
 
+.yellow-grid{
+  background-image: linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(to right, #ffffff 1px, transparent 1px);
+background-size: 39px 39px;
+background-color: #fde047;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

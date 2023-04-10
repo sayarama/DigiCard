@@ -75,7 +75,7 @@ export default function Home() {
       </div>
       {/* Akhir Bagian Pokemon Card */}
 
-      <footer className="text-center bg-gray-800 text-white font-poppins">Digimon Website by @ul.ramadhan. Work In Progress</footer>
+      <footer className="text-center bg-gray-800 text-white font-poppins p-3">DigiList by @ul.ramadhan. Work In Progress</footer>
     </>
   );
 }

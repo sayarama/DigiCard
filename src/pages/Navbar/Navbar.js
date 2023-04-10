@@ -21,10 +21,10 @@ function Navbar() {
                     </a>
 
                     <a
-                      href="#"
+                      href="/about"
                       className="text-gray-300 hover:bg-gray-700 hover:text-white px-7 py-2 rounded-md text-sm font-medium"
                     >
-                      About
+                      About Me
                     </a>
 
                     <div className="flex-shrink-0">
