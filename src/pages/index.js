@@ -104,17 +104,7 @@ export default function Home() {
 function Card({ id, name, xAntibody }) {
   const [details, setDetails] = useState([]);
 
-  useEffect(() => {
-    axios
-      .get(`https://www.digi-api.com/api/v1/digimon/${id}`)
-      .then((res) => {
-        setDetails(res.data.descriptions[1].description);
-        console.log("resdesc", res.data.descriptions[1].description);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  });
+ 
 
   return (
     <div className="digi-container w-72 h-92 p-5 m-5 text-center bg-white  rounded-t-md ">
@@ -129,11 +119,10 @@ function Card({ id, name, xAntibody }) {
       </div>
       <h1 className="mb-5">{name}</h1>
       <p>{xAntibody}</p>
-      {/* <p>{details}</p> */}
       <button>
         <Link
           className="hover:bg-yellow-400 bg-yellow-300 px-5 py-2 rounded-lg"
-          href="/details"
+          href={`/details/${id}`}
         >
           Details
         </Link>
