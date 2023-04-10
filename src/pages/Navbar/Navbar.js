@@ -46,7 +46,7 @@ function Navbar() {
                       href="#"
                       className="text-white hover:bg-gray-700 hover:text-white px-7 py-2 rounded-md text-sm font-medium"
                     >
-                      Reach
+                      Favourites
                     </a>
                   </div>
                 </div>
@@ -56,7 +56,7 @@ function Navbar() {
         </nav>
       </div>
 
-      <div className=" font-poppins absolute top-10 left-2/3 flex flex-col items-center ">
+      <div className=" font-poppins flex flex-col items-center ">
       <Transition
           show={isOpen}
           enter="transition ease-out duration-100 transform"
@@ -70,14 +70,14 @@ function Navbar() {
             <div className="md:hidden absolute top-96 bg-gray-800" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a
-                  href="#"
+                  href="/"
                   className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Home
                 </a>
 
                 <a
-                  href="#"
+                  href="/about"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   About
@@ -89,11 +89,18 @@ function Navbar() {
                 >
                   Card
                 </a>
+
+                <a
+                  href="#"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Favourites
+                </a>
               </div>
             </div>
           )}
         </Transition>
-        <div className="flex md:hidden absolute top-11 -left-10">
+        <div className="flex md:hidden absolute">
           <button
             onClick={() => setIsOpen(!isOpen)}
             type="button"

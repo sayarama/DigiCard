@@ -3,9 +3,23 @@ import axios from "axios";
 import Link from "next/link";
 import { FaSearch } from "react-icons/fa";
 import Navbar from "./Navbar/Navbar";
+import { useSpring, animated } from "@react-spring/web";
+
+
 
 export default function Home() {
+ 
   const [items, setItems] = useState([]);
+
+  const digiAll = useSpring({
+    from: { x: 150},
+    to: { x: 0}
+  })
+
+  const text = useSpring({
+    from: { x: 100},
+    to: {x: 0}
+  })
 
   useEffect(() => {
     axios
@@ -17,6 +31,7 @@ export default function Home() {
         console.log(err);
       });
   });
+
 
 
 
@@ -34,13 +49,19 @@ export default function Home() {
 
         <div className="hidden md:block bg-img-md bg-center bg-no-repeat font-poppins">
          <div className="img-item flex">
-         <div className="left p-12 w-2/4 h-screen flex items-left justify-center gap-8 flex-col">
+         <animated.div
+         style={{...text}}
+         className="left p-12 w-2/4 h-screen flex items-left justify-center gap-8 flex-col">
           <p className="md:text-5xl lg:text-9xl font-extrabold">DIGIMON</p>
           <p>Digimon, short for "Digital Monsters", is a Japanese media franchise encompassing virtual pet toys, anime, manga, video games, films and a trading card game. The franchise focuses on the eponymous creatures, who inhabit a "Digital World", a parallel universe that originated from Earth's various communication networks.</p>
-         </div>
+         </animated.div>
 
          <div className="right w-2/4 h-screen relative">
-          <img className="absolute bottom-24" src="https://raw.githubusercontent.com/ulrmdhn/DigiCard/main/src/pages/img/digi-all.webp"/>
+          <animated.img
+          style={{
+            ...digiAll
+          }}
+          className="absolute bottom-24" src="https://raw.githubusercontent.com/ulrmdhn/DigiCard/main/src/pages/img/digi-all.webp"/>
          </div>
          </div>
         </div>
