@@ -23,7 +23,7 @@ export default function Home() {
 
   useEffect(() => {
     axios
-      .get("https://www.digi-api.com/api/v1/digimon?pageSize=100")
+      .get("https://www.digi-api.com/api/v1/digimon?pageSize=283")
       .then((res) => {
         setItems(res.data.content);
       })

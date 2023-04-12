@@ -13,12 +13,12 @@ function about() {
         </div>
        </Link>
 
-        <div className='bg-white rounded-md w-2/3 m-auto h-3/4 md:flex md:items-center md:flex-row shadow-xl '>
+        <div className='bg-white rounded-md w-2/3 m-auto h-3/4 md:flex md:items-center md:flex-row shadow-xl overflow-scroll '>
            <div className='left bg-profile rounded-md bg-cover bg-no-repeat bg-center w-full md:w-2/4 h-2/4 md:h-full '>
 
            </div>
 
-           <div className='md:w-2/4 right p-3 flex flex-col h-full md:justify-center'>
+           <div className='md:w-2/4 right p-3 flex flex-col md:h-full md:justify-center'>
             <h1 className='font-bold md:text-3xl lg:text-7xl'>
                 About Me
             </h1>
