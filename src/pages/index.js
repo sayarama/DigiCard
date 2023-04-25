@@ -78,6 +78,8 @@ export default function Home() {
           <div className="search flex items-center bg-white p-3 rounded-lg">
             <FaSearch/>
             <input type="search" className="bg-transparent ml-2 z-10 focus:outline-none" placeholder="Search" />
+
+            
           </div>
         </div>
 

@@ -24,6 +24,8 @@ function about() {
             </h1>
 
             <p className='mt-3'>Aulia Ramadhan (Rama) is a Front-End Web Developer who lives in Jakarta. Love to slice design to a simple website interface. This website is made to learn how to fetch API using api from https://digimon-api.com/ .</p>
+
+           
             
             <Link href="https://www.instagram.com/ul.ramadhan/" target="_blank">
             <div className='flex items-center mt-3 font-semibold'>
